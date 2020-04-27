@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1587892827 source:d:\tugas\game_store\main.cpp
+	"utility.h"
+
+1587892719 source:d:\tugas\game_store\utility.cpp
+	"utility.h"
+	<cstdlib>
+
+1587892765 d:\tugas\game_store\utility.h
+	"relation.h"
+
+1587890465 d:\tugas\game_store\relation.h
+	<iostream>
+	"parent.h"
+	"child.h"
+
+1587892454 d:\tugas\game_store\parent.h
+	<iostream>
+
+1587892472 d:\tugas\game_store\child.h
+	<iostream>
+
+1587892721 source:d:\tugas\game_store\child.cpp
+	"child.h"
+
+1587892477 source:d:\tugas\game_store\parent.cpp
+	"parent.h"
+
+1587890525 source:d:\tugas\game_store\relation.cpp
+	"relation.h"
+
