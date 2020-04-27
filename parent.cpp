@@ -2,6 +2,10 @@
 
 void createListgames(listgames &L){
     first(L)=NULL;
+/* Muhammad Ghifari Adrian
+    1301194034
+    IF-43-05
+*/
 }
 
 g_address creategames(infotypeG info){
@@ -11,6 +15,10 @@ g_address creategames(infotypeG info){
     info(P).users=0;
     next(P)=NULL;
     return P;
+    /* Muhammad Ghifari Adrian
+    1301194034
+    IF-43-05
+*/
 }
 
 void insertgames(g_address &P, listgames &L){
@@ -29,6 +37,10 @@ void insertgames(g_address &P, listgames &L){
         delete P;
         P=NULL;
     }
+    /* Muhammad Ghifari Adrian
+    1301194034
+    IF-43-05
+*/
 }
 void deletegames(g_address &P,listgames &L){
     g_address Q=first(L);
@@ -56,6 +68,10 @@ void deletegames(g_address &P,listgames &L){
     }else{
         cout << "Game tidak ditemukan" << endl;
     }
+    /* Muhammad Ghifari Adrian
+    1301194034
+    IF-43-05
+*/
 }
 
 g_address searchgames (string kode,listgames &L){
@@ -64,6 +80,10 @@ g_address searchgames (string kode,listgames &L){
         P=next(P);
     }
     return P;
+    /* Muhammad Ghifari Adrian
+    1301194034
+    IF-43-05
+*/
 }
 
 void showGames(g_address P){
@@ -71,6 +91,10 @@ void showGames(g_address P){
     cout << "ID Games\t: " << info(P).id <<endl;
     cout << "Jumlah pemain\t: " << info(P).users <<endl;
     cout << "Harga Games\t: " << info(P).harga << endl;
+    /* Muhammad Ghifari Adrian
+    1301194034
+    IF-43-05
+*/
 }
 
 void showAllGames(listgames L){
@@ -83,5 +107,9 @@ void showAllGames(listgames L){
         i++;
         P=next(P);
     }
+    /* Muhammad Ghifari Adrian
+    1301194034
+    IF-43-05
+*/
 
 }
