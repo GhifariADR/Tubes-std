@@ -30,3 +30,58 @@ void insertgames(g_address &P, listgames &L){
         P=NULL;
     }
 }
+void deletegames(g_address &P,listgames &L){
+    g_address Q=first(L);
+
+    if(P!=NULL){
+        if(P==first(L)&&next(P)==NULL){
+            first(L)=NULL;
+            cout << "List menjadi kosong!" << endl;
+        }else if(P==first(L)){
+            first(L)=next(P);
+            next(P)=NULL;
+        }else{
+            while(Q!=NULL&&next(Q)!=P){
+                Q=next(Q);
+            }
+            if(Q!=NULL){
+                next(Q)=next(P);
+                next(P)=NULL;
+
+            }
+        }
+        cout << "Game telah dihapus" << endl;
+        delete P;
+        P=NULL;
+    }else{
+        cout << "Game tidak ditemukan" << endl;
+    }
+}
+
+g_address searchgames (string kode,listgames &L){
+    g_address P=first(L);
+    while(P!=NULL&&info(P).nama!=kode&&info(P).id!=kode){
+        P=next(P);
+    }
+    return P;
+}
+
+void showGames(g_address P){
+    cout << "Nama Games\t: " << info(P).nama <<endl;
+    cout << "ID Games\t: " << info(P).id <<endl;
+    cout << "Jumlah pemain\t: " << info(P).users <<endl;
+    cout << "Harga Games\t: " << info(P).harga << endl;
+}
+
+void showAllGames(listgames L){
+    int i=1;
+    g_address P=first(L);
+
+    while(P!=NULL){
+        cout << i <<endl;
+        showGames(P);
+        i++;
+        P=next(P);
+    }
+
+}
