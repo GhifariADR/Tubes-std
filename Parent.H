@@ -1,3 +1,9 @@
+/* Muhammad Ghifari Adrian
+    1301194034
+    IF-43-05
+*/
+
+
 #ifndef PARENT_H_INCLUDED
 #define PARENT_H_INCLUDED
 
